@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html class="no-js js-menubar" lang="en-us">
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+        <meta name="description" content="">
+        <meta name="author" content="Modern Business Solutions Co., Ltd.">
+		
+        <title> ระบบบริหารงานขายเหล็กฟ้าใส </title>
+
+        <!-- #FAVICONS -->
+		<link rel="shortcut icon" href="/fss/assets/img/favor.ico">
+
+		<!-- Basic Styles -->
+		<link rel="stylesheet" href="/fss/assets/css/bootstrap.min.css?v4.0.2">
+        <link rel="stylesheet" href="/fss/assets/css/bootstrap-extend.min.css?v4.0.2">
+        <link rel="stylesheet" href="/fss/assets/css/site.min.css?v4.0.2">
+        <link rel="stylesheet" href="/fss/assets/css/app.css?v4.0.2">
+                
+        <!-- Plugins -->
+        <link rel="stylesheet" href="/fss/assets/css/plugin/animsition.min.css?v4.0.2">
+        <link rel="stylesheet" href="/fss/assets/css/plugin/asScrollable.min.css?v4.0.2">
+        <link rel="stylesheet" href="/fss/assets/css/plugin/switchery.min.css?v4.0.2">
+        <link rel="stylesheet" href="/fss/assets/css/plugin/introjs.min.css?v4.0.2">        
+                
+        <!-- Fonts -->
+        <link rel="stylesheet" href="/fss/assets/css/font-awesome.min.css?v4.0.2">
+        <link rel="stylesheet" href="/fss/assets/css/web-icons.min.css?v4.0.2">
+        <link rel="stylesheet" href="/fss/assets/css/brand-icons.min.css?v4.0.2">
+        <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic">		
+
+        
+    <!-- Plugins For This Page -->
+    <link rel="stylesheet" href="/fss/assets/css/datatable/datatable.min.css?v4.0.2">
+    <link rel="stylesheet" href="/fss/assets/css/datatable/dataTables.bootstrap4.min.css?v4.0.2">
+    <link rel="stylesheet" href="/fss/assets/css/datatable/dataTables.buttons.bootstrap4.min.css?v4.0.2">
+    <link rel="stylesheet" href="/fss/assets/css/datatable/dataTables.fixedheader.bootstrap4.min.css?v4.0.2">
+    <link rel="stylesheet" href="/fss/assets/css/datatable/dataTables.responsive.bootstrap4.min.css?v4.0.2">
+    <link rel="stylesheet" href="/fss/assets/css/datatable/dataTables.scroller.bootstrap4.min.css?v4.0.2">
+    <link rel="stylesheet" href="/fss/assets/css/datatable/dataTables.select.bootstrap4.min.css?v4.0.2">
+    
+    
+    <link rel="stylesheet" href="/fss/assets/css/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css?v4.0.2">
+
+    <style>
+        .datepicker-wrap {
+            width: 70%;
+            padding-right: 10px;
+        }
+
+        .badge.up {
+            right: -10px;
+        }
+    </style>
+
+        
+
+        <script src="/fss/assets/js/jquery/jquery.min.js?v4.0.2"></script>
+        
+        <!-- Scripts -->
+        <script src="/fss/assets/js/breakpoints/breakpoints.min.js?v4.0.2"></script>
+        <script>
+            Breakpoints();
+        </script>        
+                
+        
+
+	</head>
+    <body class="animsition site-menubar-unfold">
+        <!-- #NavBar -->        
+		<nav class="site-navbar navbar navbar-default navbar-fixed-top navbar-mega navbar-expand-md navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided" data-toggle="menubar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <button type="button" class="navbar-toggler collapsed" data-target="#site-navbar-collapse" data-toggle="collapse">
+            <i class="icon wb-more-horizontal" aria-hidden="true"></i>
+        </button>
+        <div class="navbar-brand navbar-brand-center">
+            <img class="navbar-brand-logo" src="/fss/assets/img/logo.png" title="เหล็กฟ้าใส">
+            <span class="navbar-brand-text hidden-xs-down"> เหล็กฟ้าใส</span>
+        </div>
+    </div>
+
+    <div class="navbar-container container-fluid">
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+            <!-- Navbar Toolbar -->
+            <ul class="nav navbar-toolbar">
+                <li class="nav-item hidden-float" id="toggleMenubar">
+                    <a class="nav-link" data-toggle="menubar" href="#" role="button">
+                        <i class="icon hamburger hamburger-arrow-left ">
+                            <span class="sr-only">Toggle menubar</span>
+                            <span class="hamburger-bar"></span>
+                        </i>
+                    </a>
+                </li>                     
+            </ul>
+            <!-- End Navbar Toolbar -->
+
+            <!-- Navbar Toolbar Right -->
+            <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">                
+                <li class="nav-item dropdown">
+                    <a class="nav-link navbar-avatar" data-toggle="dropdown" href="#" aria-expanded="false"
+                        data-animation="scale-up" role="button"  title="คุณเติ้ล">
+                        <span class="avatar avatar-online">
+                            <img src="/fss/media/users/637218712070471639.jpg" >
+                        </span>
+                    </a>
+                    <div class="dropdown-menu" role="menu">
+                        <a class="dropdown-item" href="/fss/Passport/MyProfile" role="menuitem"><i class="icon wb-user" aria-hidden="true"></i> Profile</a>
+                        <div class="dropdown-divider" role="presentation"></div>
+                        <a class="dropdown-item" href="/fss/Passport/LogOff" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Logout</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" style="display: none;">
+                    <a class="nav-link" data-toggle="dropdown" href="javascript:void(0)" title="Notifications"
+                        aria-expanded="false" data-animation="scale-up" role="button">
+                        <i class="icon wb-bell" aria-hidden="true"></i>
+                        <span class="badge badge-pill badge-danger up">5</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-media" role="menu">
+                        <div class="dropdown-menu-header">
+                            <h5>NOTIFICATIONS</h5>
+                            <span class="badge badge-round badge-danger">New 5</span>
+                        </div>
+
+                        <div class="list-group">
+                            <div data-role="container">
+                                <div data-role="content">
+                                    <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="pr-10">
+                                                <i class="icon wb-order bg-red-600 white icon-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">A new order has been placed</h6>
+                                                <time class="media-meta" datetime="2018-06-12T20:50:48+08:00">5 hours ago</time>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="pr-10">
+                                                <i class="icon wb-user bg-green-600 white icon-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Completed the task</h6>
+                                                <time class="media-meta" datetime="2018-06-11T18:29:20+08:00">2 days ago</time>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="pr-10">
+                                                <i class="icon wb-settings bg-red-600 white icon-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Settings updated</h6>
+                                                <time class="media-meta" datetime="2018-06-11T14:05:00+08:00">2 days ago</time>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="pr-10">
+                                                <i class="icon wb-calendar bg-blue-600 white icon-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Event started</h6>
+                                                <time class="media-meta" datetime="2018-06-10T13:50:18+08:00">3 days ago</time>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a class="list-group-item dropdown-item" href="javascript:void(0)" role="menuitem">
+                                        <div class="media">
+                                            <div class="pr-10">
+                                                <i class="icon wb-chat bg-orange-600 white icon-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <h6 class="media-heading">Message received</h6>
+                                                <time class="media-meta" datetime="2018-06-10T12:34:48+08:00">3 days ago</time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu-footer">
+                        <a class="dropdown-menu-footer-btn" href="javascript:void(0)" role="button">
+                            <i class="icon wb-settings" aria-hidden="true"></i>
+                            </a>
+                        <a class="dropdown-item" href="javascript:void(0)" role="menuitem">
+                            All notifications
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- End Navbar Toolbar Right -->
+        </div>
+        <!-- End Navbar Collapse -->
+    </div>
+</nav>
+        <!-- END NavBar -->
+
+		<!-- #NAVIGATION -->
+
+
+<div class="site-menubar">
+    <div class="site-menubar-body">
+        <div>
+            <div>
+                <ul class="site-menu" data-plugin="menu">
+                    <li class="site-menu-category">General</li>
+                    <li class="site-menu-item has-sub
+                         ">
+                        <a href="javascript:void(0)">
+                            <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
+                            <span class="site-menu-title">Dashboard</span>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item ">
+                                <a href="/fss/" title="ภาพรวม">
+                                    <span class="site-menu-title">ภาพรวม</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item ">
+                                <a href="/fss/Home/Area" title="สรุปยอดขายตามเขตพื้นที่">
+                                    <span class="site-menu-title">เขตพื้นที่</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item ">
+                                <a href="/fss/Home/SalePerformance" title="เปรียบเทียบยอดขาย">
+                                    <span class="site-menu-title">เทียบยอดขาย</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item ">
+                                <a href="/fss/Home/CustomerNoneMove" title="ลูกค้าที่ไม่มีความเคลื่อนไหว">
+                                    <span class="site-menu-title">ลูกค้าขาดติดต่อ</span>
+                                </a>
+                            </li>
+                            
+                            <li class="site-menu-item ">
+                                <a href="/fss/Home/Pending2" title="รายการค้างส่ง">
+                                    <span class="site-menu-title">ยอดค้างส่ง</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="site-menu-item
+                         ">
+                        <a href="/fss/Home/Schedule" title="รายการตารางงาน">
+                            <i class="site-menu-icon fa-calendar"></i>
+                            <span class="site-menu-title">ตารางงาน</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-category">Transports</li>
+                    <li class="site-menu-item
+                         ">
+                        <a href="/fss/Transport/Schedule" title="รายการตารางเดินรถ">
+                            <i class="site-menu-icon fa-sliders"></i>
+                            <span class="site-menu-title">ตารางเดินรถ</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Transport" title="รายการจัดการคิวเดินรถ">
+                            <i class="site-menu-icon fa-tasks"></i>
+                            <span class="site-menu-title">จัดการคิวรถ</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                         ">
+                        <a href="/fss/Transport/RoutePlan" title="รายการจัดการประเมินยอดส่ง">
+                            <i class="site-menu-icon fa-balance-scale"></i>
+                            <span class="site-menu-title">ประเมินยอดส่ง</span>
+                        </a>
+                    </li>
+                    
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Transport/Truck" title="รายการรถบรรทุก">
+                            <i class="site-menu-icon fa-truck"></i>
+                            <span class="site-menu-title">รถบรรทุก</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-category">Purchase Orders</li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Purchase/Plan" title="รายการเปรียบเทียบราคาสินค้า">
+                            <i class="site-menu-icon wb-tag"></i>
+                            <span class="site-menu-title">เทียบราคา</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Purchase/Pre" title="รายการใบเสนอซื้อ">
+                            <i class="site-menu-icon fa-inbox"></i>
+                            <span class="site-menu-title">เสนอซื้อ</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Purchase/AppPr" title="รายการขออนุมัติซื้อ">
+                            <i class="site-menu-icon fa-gavel"></i>
+                            <span class="site-menu-title">ขอนุมัติซื้อ</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                        active">
+                        <a href="/fss/Purchase/PR" title="รายการใบสั่งซื้อสินค้า">
+                            <i class="site-menu-icon wb-order"></i>
+                            <span class="site-menu-title">ใบสั่งซื้อ</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Purchase/PO" title="รายการรับสินค้า">
+                            <i class="site-menu-icon fa-shopping-basket"></i>
+                            <span class="site-menu-title">รับสินค้า</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-category">Sale Orders</li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Sale/Quotation" title="รายการใบเสนอราคาสินค้า">
+                            <i class="site-menu-icon wb-tag"></i>
+                            <span class="site-menu-title">ใบเสนอราคา</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Sale/Order" title="รายการใบสั่งขายสินค้า">
+                            <i class="site-menu-icon wb-order"></i>
+                            <span class="site-menu-title">ใบสั่งขาย</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Sale/Invoice" title="รายการขายสินค้า">
+                            <i class="site-menu-icon wb-book"></i>
+                            <span class="site-menu-title">ใบส่งสินค้า</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Sale/CreditNote" title="รายการใบลดหนี้สินค้า">
+                            <i class="site-menu-icon wb-sort-des"></i>
+                            <span class="site-menu-title">ใบลดหนี้</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/SaleReport" title="รายงาน">
+                            <i class="site-menu-icon wb-library"></i>
+                            <span class="site-menu-title">รายงาน</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-category">Salesman</li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Saleman" title="พนักงานขาย">
+                            <i class="site-menu-icon wb-user-circle"></i>
+                            <span class="site-menu-title">พนักงานขาย</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Saleman/Team" title="Team">
+                            <i class="site-menu-icon wb-star"></i>
+                            <span class="site-menu-title">ทีมขาย</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-category">Customers</li>
+                    <li class="site-menu-item
+                         ">
+                        <a href="/fss/Ar" title="ข้อมูลรายชื่อลูกค้า">
+                            <i class="site-menu-icon wb-users"></i>
+                            <span class="site-menu-title">ลูกค้า</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-item
+                         ">
+                        <a href="/fss/Ar/Area" title="ข้อมูลเขตพื้นที่">
+                            <i class="site-menu-icon wb-map"></i>
+                            <span class="site-menu-title">เขตพื้นที่</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/ArReport" title="รายงาน">
+                            <i class="site-menu-icon wb-library"></i>
+                            <span class="site-menu-title">รายงาน</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-category">Suppliers</li>
+                    <li class="site-menu-item
+                         ">
+                        <a href="/fss/Ap" title="ข้อมูลรายชื่อผู้จำหน่าย">
+                            <i class="site-menu-icon wb-users"></i>
+                            <span class="site-menu-title">ผู้จำหน่าย</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-category">Products</li>
+                    <li class="site-menu-item">
+                        <a href="javascript:void(0);" title="Summary">
+                            <i class="site-menu-icon wb-graph-up"></i>
+                            <span class="site-menu-title">Summary</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                         ">
+                        <a href="/fss/Item" title="ข้อมูลรายการสินค้า">
+                            <i class="site-menu-icon fa-diamond"></i>
+                            <span class="site-menu-title">รายการสินค้า</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                         ">
+                        <a href="/fss/Item/Cate" title="ข้อมูลหมวดสินค้า">
+                            <i class="site-menu-icon wb-list-numbered"></i>
+                            <span class="site-menu-title">หมวดสินค้า</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/ItemReport" title="รายงาน">
+                            <i class="site-menu-icon wb-library"></i>
+                            <span class="site-menu-title">รายงาน</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-category">Settings</li>
+                    <li class="site-menu-item
+                         ">
+                        <a href="/fss/Setting/Users" title="ข้อมูลผู้ใช้ระบบ">
+                            <i class="site-menu-icon wb-user"></i>
+                            <span class="site-menu-title">ผู้ใช้ระบบ</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Setting/Calendar" title="ปฎิทินวันหยุด">
+                            <i class="site-menu-icon wb-calendar"></i>
+                            <span class="site-menu-title">ปฎิทินวันหยุด</span>
+                        </a>
+                    </li>
+
+                    <li class="site-menu-item
+                        ">
+                        <a href="/fss/Setting/Basic" title="ข้อมูลพื้นฐาน">
+                            <i class="site-menu-icon wb-book"></i>
+                            <span class="site-menu-title">ข้อมูลพื้นฐาน</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</div>		
+		<!-- END NAVIGATION -->
+		
+
+        <!-- Page -->
+        <div class="page">
+            
+
+
+
+
+
+
+<!-- Page Header -->
+<div class="page-header">
+    <h1 class="page-title font-size-26 font-weight-100">Order no.PO5520966</h1>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/fss/">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="/fss/Purchase/PR">Purchase Orders</a></li>
+        <li class="breadcrumb-item active">PO5520966</li>
+    </ol>
+    <div class="page-header-actions">
+            
+                <button type="button" class="btn btn-icon btn-success btn-round ajax-submit" data-toggle="tooltip" data-original-title="Save">
+                    <i class="icon wb-check" aria-hidden="true"></i>
+                </button>
+            
+        <button type="button" class="btn btn-icon btn-warning btn-round btn-print" data-toggle="tooltip" data-original-title="Print">
+            <i class="icon fa-print" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-icon btn-round" data-toggle="tooltip" data-original-title="Close" onclick="javascript: window.close();">
+            <i class="icon wb-close" aria-hidden="true"></i>
+        </button>
+    </div>
+</div>
+<!-- End Header -->
+<input id="IsManage" name="IsManage" type="hidden" value="true" />
+<div class="page-content">
+    <div class="panel">
+        <div class="panel-body container-fluid" id="content-outer">
+<form action="/fss/Purchase/PRProfileSave" data-ajax="true" data-ajax-failure="OnFail" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-success="onSuccess" data-ajax-update="#content-main" id="frmMain" method="post">                <div id="content-main">
+                    
+
+<input data-val="true" data-val-number="The field RowOrder must be a number." data-val-required="The RowOrder field is required." id="RowOrder" name="RowOrder" type="hidden" value="3564" />
+<div class="form-horizontal">
+    <div class="panel-box panel-info">
+        <div class="panel-body">
+            <div class="form-group row">
+                <label class="col-md-1 col-form-label">เลขที่: </label>
+                <div class="col-md-3">
+                    <input class="form-control" id="DocNo" name="DocNo" readonly="true" type="text" value="PO5520966" />
+                </div>
+                <label class="col-md-1 col-form-label">วันที่: </label>
+                <div class="col-md-3">
+                    <div class="input-group" data-plugin="datetimepicker" >
+                        <input Value="14/12/2020 10:14" class="form-control" data-val="true" data-val-date="The field DocDate must be a date." data-val-required="The DocDate field is required." id="DocDate" name="DocDate" type="text" value="14/12/2563 10:14" />
+                        <span class="input-group-addon">
+                            <i class="icon wb-calendar"></i>
+                        </span>
+                    </div>
+                </div>
+                <label class="col-md-1 col-form-label">สถานะ: </label>
+                <div class="col-md-3">
+                    <select class="form-control" data-val="true" data-val-number="The field Status must be a number." data-val-required="The Status field is required." id="Status" name="Status"><option selected="selected" value="1">ปกติ</option>
+<option value="99">ยกเลิก</option>
+</select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-md-1 col-form-label">รหัสผู้ขาย: </label>
+                <div class="col-md-3">
+                    <input class="form-control" id="ApID" name="ApID" readonly="true" type="text" value="U01" />
+                </div>
+                <label class="col-md-1 col-form-label">ชื่อผู้ขาย: </label>
+                <div class="col-md-3">
+                    <input class="form-control" id="ApName" name="ApName" readonly="true" type="text" value="ดูโฮม จำกัด (มหาชน)" />
+                </div>
+                <label class="col-md-1 col-form-label">แจ้งค้างรับ: </label>
+                <div class="col-md-3">
+                    <select class="form-control" data-val="true" data-val-required="The IsNotify field is required." id="IsNotify" name="IsNotify"><option selected="selected" value="True">แจ้งเตือน</option>
+<option value="False">ไม่ต้องแจ้ง</option>
+</select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-md-1 col-form-label">กำหนดรับ: </label>
+                <div class="col-md-3">
+                    <div class="input-group" data-plugin="datetimepicker" data-format="DD/MM/YYYY">
+                        <input Value="14/12/2020" class="form-control" data-val="true" data-val-date="The field ReceiveDate must be a date." id="ReceiveDate" name="ReceiveDate" readonly="true" type="text" value="14/12/2563" />
+                        <span class="input-group-addon">
+                            <i class="icon wb-calendar"></i>
+                        </span>
+                    </div>
+                </div>
+                <label class="col-md-1 col-form-label">ประเภท: </label>
+                <div class="col-md-3">
+                    <input class="form-control" id="PayTypeText" name="PayTypeText" readonly="true" type="text" value="เครดิต" />
+                </div>
+                <label class="col-md-1 col-form-label">ภาษี: </label>
+                <div class="col-md-3">
+                    <input class="form-control" id="TaxTypeText" name="TaxTypeText" readonly="true" type="text" value="รวมภาษี" />
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <div class="panel-box panel-info">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-warp">
+                        <div class="nav-tabs-horizontal">
+                            <ul class="nav nav-tabs nav-tabs-line" role="tablist">
+                                <li class="nav-item" role="presentation"><a class="nav-link active" data-toggle="tab" href="#tabItem" aria-controls="tabItem" role="tab">สินค้า</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" data-toggle="tab" href="#tabPending" aria-controls="tabPending" role="tab" id="headerPending">ค้างรับ</a></li>
+                            </ul>
+                            <div class="tab-content pt-20">
+                                <div class="tab-pane active" id="tabItem" role="tabpanel">
+                                    <table id="dtitem" class="table table-bordered table-hover table-striped dataTable no-footer" width="100%"></table>
+                                </div>
+                                <div class="tab-pane" id="tabPending" role="tabpanel">
+                                    <table id="dtpending" class="table table-bordered table-hover table-striped dataTable no-footer" width="100%"></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel-box panel-info">
+                <div class="panel-body">
+                    <div class="form-horizontal">
+                        <div class="form-group row">
+                            <label class="col-md-2 col-form-label">เครดิต: </label>
+                            <div class="col-md-4">
+                                <input class="form-control" data-val="true" data-val-number="The field Credit must be a number." data-val-required="The Credit field is required." id="Credit" name="Credit" readonly="true" type="text" value="30" />
+                            </div>
+                            <label class="col-md-2 col-form-label">กำหนดชำระ: </label>
+                            <div class="col-md-4">
+                                <div class="input-group" data-plugin="datetimepicker" data-format="DD/MM/YYYY">
+                                    <input Value="" class="form-control" data-val="true" data-val-date="The field DueDate must be a date." id="DueDate" name="DueDate" readonly="readonly" type="text" value="" />
+                                    <span class="input-group-addon">
+                                        <i class="icon wb-calendar" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-2 col-form-label">หมายเหตุ: </label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" cols="20" id="Description" name="Description" rows="2">
+5643477,PR63120063</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+              <div class="panel-box panel-info">
+                <div class="panel-body">
+                    <div class="form-horizontal">
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">ยอดเงิน: </label>
+                            <div class="col-md-9">
+                                <input class="form-control text-right" data-val="true" data-val-number="The field TotalAmt must be a number." data-val-required="The TotalAmt field is required." id="TotalAmt" name="TotalAmt" readonly="true" type="text" value="103,584.00" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">ส่วนลด: </label>
+                            <div class="col-md-3">
+                                <input class="form-control" id="DiscountText" name="DiscountText" readonly="true" type="text" value="" />
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control text-right" data-val="true" data-val-number="The field DiscountAmt must be a number." data-val-required="The DiscountAmt field is required." id="DiscountAmt" name="DiscountAmt" readonly="true" type="text" value="0.00" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">ยอดภาษี: </label>
+                            <div class="col-md-3">
+                                <input class="form-control text-right" data-val="true" data-val-number="The field TaxRate must be a number." data-val-required="The TaxRate field is required." id="TaxRate" name="TaxRate" readonly="true" type="text" value="0.00" />
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control text-right" data-val="true" data-val-number="The field TaxAmt must be a number." data-val-required="The TaxAmt field is required." id="TaxAmt" name="TaxAmt" readonly="true" type="text" value="0.00" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">รวมทั้งสิ้น: </label>
+                            <div class="col-md-9">
+                                <input class="form-control text-right" data-val="true" data-val-number="The field NetAmt must be a number." data-val-required="The NetAmt field is required." id="NetAmt" name="NetAmt" readonly="true" type="text" value="103,584.00" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+                </div>
+</form>        </div>
+    </div>
+
+    <div id="loadMain" class="loading-overlay">
+        <div class="loading-icon">
+            <div class="loader vertical-align-middle loader-grill"></div>
+        </div>
+    </div>
+</div>
+        </div>        
+        <!-- End Page -->
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="site-footer-legal"> © 2015 - 2020 <a href="https://lfssteel.com/" target="_blank">บริษัท เหล็กฟ้าใส จำกัด</a></div>
+            
+        </footer>
+
+		<!--================================================== -->
+
+		<!-- Core  -->
+        <script src="/fss/assets/js/babel-external-helpers.js?v4.0.2"></script>
+        <script src="/fss/assets/js/popper/popper.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/bootstrap/bootstrap.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/animsition/animsition.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/mousewheel/jquery.mousewheel.js?v4.0.2"></script>
+        <script src="/fss/assets/js/asscrollbar/jquery-asScrollbar.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/asscrollable/jquery-asScrollable.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/ashoverscroll/jquery-asHoverScroll.min.js?v4.0.2"></script>
+
+        <!-- Plugins -->
+        <script src="/fss/assets/js/switchery/switchery.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/intro/intro.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/screenfull/screenfull.js?v4.0.2"></script>        
+
+        <!-- Scripts -->
+        <script src="/fss/assets/js/Component.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/Plugin.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/Base.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/Config.min.js?v4.0.2"></script>
+
+        <script src="/fss/assets/js/section/Menubar.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/section/GridMenu.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/section/Sidebar.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/section/PageAside.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/plugin/menu.min.js?v4.0.2"></script>
+                
+        <!-- Config -->
+        <script src="/fss/assets/js/config/colors.min.js?v4.0.2"></script>
+
+        <!-- Page -->
+        <script src="/fss/assets/js/global.js?v4.0.2"></script>
+        <script src="/fss/assets/js/Site.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/plugin/asscrollable.min.js?v4.0.2"></script>
+        <script src="/fss/assets/js/plugin/switchery.min.js?v4.0.2"></script>        
+       
+        
+    <!-- Plugins For This Page -->
+    <script src="/fss/assets/js/jquery-ui/jquery-ui.min.js?v4.0.2"></script>
+
+    <script src="/fss/assets/js/datatable/jquery.dataTables.js?v4.0.2"></script>
+    <script src="/fss/assets/js/datatable/dataTables.bootstrap4.js?v4.0.2"></script>
+    <script src="/fss/assets/js/datatable/dataTables.fixedHeader.min.js?v4.0.2"></script>
+    <script src="/fss/assets/js/datatable/dataTables.responsive.min.js?v4.0.2"></script>
+    <script src="/fss/assets/js/datatable/dataTables.scroller.min.js?v4.0.2"></script>
+    <script src="/fss/assets/js/datatable/responsive.bootstrap4.min.js?v4.0.2"></script>
+
+    <script src="/fss/assets/js/matchheight/jquery.matchHeight-min.js?v4.0.2"></script>
+    <script src="/fss/assets/js/bootbox/bootbox.min.js?v4.0.2"></script>
+
+    <script src="/fss/assets/js/moment/moment-with-locales.js?v4.0.2"></script>
+    <script src="/fss/assets/js/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js?v4.0.2"></script>
+    <script src="/fss/assets/js/plugin/bootstrap-datetimepicker.min.js?v4.0.2"></script>
+
+    <script type="text/javascript">
+        var ds = [];
+        var ps = [];
+        var ls = [];
+        var dtview = null;
+        var dtpending = null;
+        var isshow = false;
+ isshow = true 
+        $(document).ready(function () {
+                var item = {Row: 1, RowOrder: 13688, ItemID: '02YF300-150-6', ItemName: 'ไวแฟรงค์  300*150*6เมตร(57128/10ส)(220+-)', UnitID: 'เส้น', UnitName: 'เส้น', Price: 5712.8, Qty: 10, RQty: 10, RDate: '', RDateText: '', RID: '', RName: '', DlvDate: '14/12/20', CQty: 0, CDate: '', CID: '', CName: '', DiscountText: '', TotalAmt: 57128, Description: ''};
+                ds.push(item);
+                var item = {Row: 2, RowOrder: 13689, ItemID: '02YF300-150-6', ItemName: 'ไวแฟรงค์  300*150*6เมตร(220+-)', UnitID: 'เส้น', UnitName: 'เส้น', Price: 5769, Qty: 4, RQty: 4, RDate: '', RDateText: '', RID: '', RName: '', DlvDate: '14/12/20', CQty: 0, CDate: '', CID: '', CName: '', DiscountText: '', TotalAmt: 23076, Description: ''};
+                ds.push(item);
+                var item = {Row: 3, RowOrder: 13690, ItemID: '02T1.1/2-1.1/2', ItemName: 'เหล็กสี่เหลี่ยม 1.1/2&quot;(ตัน)(8306/5ส)(68+-)', UnitID: 'เส้น', UnitName: 'เส้น', Price: 1661.2, Qty: 10, RQty: 10, RDate: '', RDateText: '', RID: '', RName: '', DlvDate: '14/12/20', CQty: 0, CDate: '', CID: '', CName: '', DiscountText: '', TotalAmt: 16612, Description: ''};
+                ds.push(item);
+                var item = {Row: 4, RowOrder: 13691, ItemID: '02T1.1/2-1.1/2', ItemName: 'เหล็กสี่เหลี่ยม 1.1/2&quot;(ตัน)(68+-)', UnitID: 'เส้น', UnitName: 'เส้น', Price: 1692, Qty: 4, RQty: 4, RDate: '', RDateText: '', RID: '', RName: '', DlvDate: '14/12/20', CQty: 0, CDate: '', CID: '', CName: '', DiscountText: '', TotalAmt: 6768, Description: ''};
+                ds.push(item);
+
+            var ar2 = [];
+            for (var i = 0, len = ds.length; i < len; i++) {
+                ar2[i] = {}; // empty object to hold properties added below
+                for (var prop in ds[i]) {
+                    ar2[i][prop] = ds[i][prop]; // copy properties from arObj to ar2
+                }
+            }
+
+            var rw = 1;
+            $.each(ar2, function(i, val){
+                if(val.RID.length > 0 || val.RDateText.length > 0 || val.RQty>0){
+                    ps.push(val);
+                    ps[ps.length-1].Row = rw++;
+                }
+            });
+
+            dtview = $('#dtitem').DataTable({
+                data: ds,
+                lengthChange: false,
+                ordering: false,
+                searching: false,
+                autoWidth: false,
+                responsive: true,
+                info: false,
+                columns: [
+                    { title: "No.", data: 'Row', width: '20px' },
+                    { title: "รายการสินค้า", data: 'ItemName' },
+                    { title: "กำหนดรับ", data: 'DlvDate', width: '80px', className: 'text-center' },
+                    { title: "หน่วยนับ", data: 'UnitName', width: '60px', className: 'text-center' },
+                    { title: "จำนวน", data: 'Qty' },
+                    { title: "ราคา", data: 'Price' },
+                    { title: "ส่วนลด", data: 'DiscountText', width: '60px', className: 'text-center' },
+                    { title: 'จำนวนเงิน', data: 'TotalAmt' },
+                ],
+                columnDefs:[
+                    {targets: 4, width: '80px', className: 'text-right', render: function(data){return addcomma(data, 2);}},
+                    {targets: 5, width: '90px', className: 'text-right', render: function(data){return (isshow? addcomma(data, 2) : "-");}},
+                    {targets: 7, width: '100px', className: 'text-right', render: function(data){return (isshow? addcomma(data, 2) : "-");}},
+                    {targets: [0, 1, 2, 3, 4, 5, 6, 7], className: 'desktop'},
+                    {targets: [0, 1, 2, 3, 4, 5, 6, 7], className: 'tablet'},
+                    {targets: [0, 1], className: 'mobile'}
+                ],
+                language: {
+                    paginate:{
+                        next: '>',
+                        previous: '<'
+                    }
+                }
+            });
+
+            dtpending = $('#dtpending').DataTable({
+                data: ps,
+                lengthChange: false,
+                ordering: false,
+                searching: false,
+                autoWidth: false,
+                responsive: true,
+                info: false,
+                columns: [
+                    { title: "No.", data: 'Row', width: '20px' },               //0
+                    { title: "รายการสินค้า", data: 'ItemName' },    //1
+                    { title: "ค้างรับ", data: 'RQty' },//2
+                    { title: "ยกเลิก", data: 'CQty' },//3
+                    { title: "วันที่", data: 'CDate' },//4
+                    { title: 'สาเหตุ', data: 'CName' } //5
+                ],
+                columnDefs:[
+                    {
+                        targets: 0,
+                        width: '20px',
+                        render: function (data, type, row, meta) {
+                            return parseInt(meta.row) + 1;
+                        }
+                    },
+                    {
+                        targets: 2, width: '50px', className: 'text-right', render: function(data){return addcomma(data, 2);}
+                    },
+                    {
+                        targets: 3, width: '50px', className: 'text-right', render: function(data){return addcomma(data, 2);}
+                    },
+                    {
+                        targets: 4, width: '120px'
+                    },
+                    {
+                        targets: 5, width: '150px'
+                    },
+                    {targets: [0, 1, 2, 3, 4, 5], className: 'desktop'},
+                    {targets: [0, 1, 2, 3, 4], className: 'tablet'},
+                    {targets: [0, 1], className: 'mobile'}
+                ],
+                language: {
+                    paginate:{
+                        next: '>',
+                        previous: '<'
+                    }
+                }
+            });
+
+            if(ps.length > 0){
+                $('#headerPending').append("<span class='badge badge-pill badge-danger up'>" + ps.length + "</span>");
+            }
+        });
+
+        $(document).on('click', '.ajax-submit', function(e){
+            e.preventDefault();
+
+            var date = moment($("#DocDate").val(), 'DD/MM/YYYY HH:mm', true);
+            if(!date.isValid()){
+                alert('วันที่ไม่ถูกต้อง');
+                $('#DocDate').focus();
+                return;
+            }
+            var data = new Object();
+            data.RowOrder = $('#RowOrder').val();
+            data.DocNo = $('#DocNo').val();
+            data.DocDate = date.toJSON();
+            data.Status = $('#Status').val();
+            data.IsNotify = $('#IsNotify').val();
+            data.Description = $('#Description').val();
+            data.Items = ds;
+
+            $('#loadMain').addClass('active');
+            $.ajax({
+                type: 'POST',
+                url: '/fss/Purchase/PRProfileSave',
+                dataType: 'json',
+                data: JSON.stringify(data),
+                contentType: 'application/json; charset=utf-8',
+                success: function (r) {
+                    $('#loadMain').removeClass('active');
+                    if (r.url != undefined && r.url) {
+                        window.location.href = r.url;
+                    }
+                    else{
+                        if(r.error.length>0){
+                            alert(r.error);
+                        }
+                    }
+                },
+                error: function (a, b, c) {
+                    alert(c);
+                    $('#loadMain').removeClass('active');
+                }
+             });
+        });
+
+        $(document).on("keypress keyup blur", ".input-num",function (event) {
+            $(this).val($(this).val().replace(/[^0-9\.]/g,''));
+            if ((event.which != 46 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57)) {
+                event.preventDefault();
+            }
+        });
+
+        $(document).on('click', '.btn-print', function(e){
+            e.preventDefault();
+            window.open('/fss/PurchaseReport/PoOrder/PO5520966');
+        });
+    </script>
+
+        
+        <script>
+            (function (document, window, $) {
+                'use strict';
+
+                var Site = window.Site;
+                $(document).ready(function () {
+                    Site.run();
+                });
+            })(document, window, jQuery);
+        </script>       
+
+    </body>
+</html>

@@ -1,0 +1,11 @@
+curl 'http://fssteel.dyndns.org:81/fss/Purchase/PRProfile/PO5520965' \
+  -H 'Connection: keep-alive' \
+  -H 'Cache-Control: max-age=0' \
+  -H 'Upgrade-Insecure-Requests: 1' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36' \
+  -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+  -H 'Referer: http://fssteel.dyndns.org:81/fss/Purchase/PR' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  -H 'Cookie: ASP.NET_SessionId=e1qtnyh11k5j0evuk1z54udh; __RequestVerificationToken_L2Zzcw2=v8neM4YE5rV_wdNFac1YbJ3_wWQofvEy4kEkpJJEWzJtlIYGwmT40QPGVAWWSEL3znUXA2lmoO3UsAppdgznc0DxMKIzjeqYnWEtLapd8uc1; .ASPXAUTH=A15B85C545241929EF6D5C0F86DCAE23A28312AA5C58BB5BBB265934DAA0A70F04F05DC70868D575FC0B24A0C9055C78A78B1029E7F18B91A817C944A62B0F4DC2936B8202A230E8FB8099C2E98E3CB6; lfssteel=id=&password=&picture=637218712070471639.jpg' \
+  --compressed \
+  --insecure
